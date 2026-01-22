@@ -1,4 +1,3 @@
-
 const dataset = {
   farm: {
     name: "EldoGreen Seedling Farm",
@@ -119,8 +118,30 @@ console.log(dataset.farm.contact.email);
 console.log(dataset.seedlings[1].price_kes); // the price of one moringa seedling
 
 //Quantity of an order
-console.log(dataset.orders[0].items[0].quantity + dataset.orders[0].items[1].quantity)
+console.log(
+  dataset.orders[0].items[0].quantity + dataset.orders[0].items[1].quantity,
+);
 
+// Species Name
+console.log(dataset.seedlings[1].species);
+
+// Sunlight Requirement
+console.log(dataset.seedlings[2].attributes.sunlight);
+
+// Moringa Stock
+console.log(dataset.seedlings[1].stock);
+
+// Customer Email for ORD002
+console.log(dataset.orders[1].email);
+
+// Supplier Location for Seedling ID 1
+console.log(dataset.seedlings[0].supplier.name);
+
+// Total Cost for Jane Wambui
+console.log(dataset.orders[0].total_kes);
+
+// Soil type for Ornamentals
+console.log(dataset.seedlings[2].soil_type[0]);
 /**
  QUESTIONS
 - Basic Property Access: What is the name of the farm?
